@@ -38,7 +38,7 @@ export default function Stats() {
   }, []); // Empty dependency array means this effect runs once on mount
 
   return (
-    <section className="px-6 md:px-12 text-center bg-white py-16"> {/* Added vertical padding */}
+    <section className="px-6 md:px-12 text-center bg-white pb-4"> {/* Added vertical padding */}
       <h2 className="text-xl md:text-2xl font-medium mb-3 text-black">
         Your Team Is Stressed. And It&apos;s Costing You.
       </h2>
