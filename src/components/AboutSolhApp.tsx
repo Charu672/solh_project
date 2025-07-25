@@ -163,7 +163,7 @@ export default function AboutSolhApp() {
             </h4>
             <hr className=" border-black my-2" />
             <p className="text-xs text-gray-700">
-              Whether you're an individual seeking peace of mind or a company
+              Whether you&apos;re an individual seeking peace of mind or a company
               aiming to boost employee well-being, Solh offers dashboards,
               assessments, and engagement tools for impactful results.
             </p>

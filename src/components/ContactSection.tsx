@@ -17,7 +17,7 @@ export default function ContactSection() {
   return (
     <section className="bg-white py-8 px-4 sm:px-6 lg:px-8"> 
       <h2 className={`text-xl md:text-3xl text-center font-medium ${dmsans.className} text-black mb-6`}> 
-            Let’s Build a Healthier, Happier Workplace
+            Let&apos;s Build a Healthier, Happier Workplace
           </h2>
       <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-8"> 
         {/* Left Image and its Background */}

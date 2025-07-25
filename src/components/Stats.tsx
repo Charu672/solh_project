@@ -40,10 +40,10 @@ export default function Stats() {
   return (
     <section className="px-6 md:px-12 text-center bg-white py-16"> {/* Added vertical padding */}
       <h2 className="text-xl md:text-2xl font-medium mb-3 text-black">
-        Your Team Is Stressed. And It's Costing You.
+        Your Team Is Stressed. And It&apos;s Costing You.
       </h2>
       <p className="text-gray-500 text-sm md:text-base font-normal mb-10">
-        Here's what other people are finding most useful right now.
+        Here&apos;s what other people are finding most useful right now.
       </p>
       <div className="flex flex-row flex-wrap justify-center gap-6 max-w-7xl mx-auto"> {/* Added mx-auto for centering */}
         {/* Card 1: Blue Gradient */}

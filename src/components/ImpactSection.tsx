@@ -35,7 +35,7 @@ export default function ImpactSection() {
             <p className="text-black text-sm">4.8</p>
           </div>
           <p className="text-gray-700">
-            “Payments are the main interaction point between Accenture’s
+            “Payments are the main interaction point between Accenture&apos;s
             financial services clients and their customers, and we care to our
             relationships beyond that sector too.”
           </p>
