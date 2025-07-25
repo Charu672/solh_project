@@ -1,7 +1,12 @@
 import { CiLock } from "react-icons/ci";
 import { LuHeartPulse } from "react-icons/lu";
 import { HiOutlineUserGroup } from "react-icons/hi2";
-
+import {Inter } from "next/font/google";
+const inter = Inter({
+  subsets: ['latin'], // This is standard for most Latin-based content
+  weight: ['400', '500', '600', '700'], // Common weights for Inter (Regular, Medium, SemiBold, Bold)
+  // No 'variable' needed if you're not extending tailwind.config.js
+});
 export default function Features() {
   const features = [
     {
@@ -44,7 +49,7 @@ export default function Features() {
             >
               <feature.icon size={20} /> {/* Reduced icon size */}
             </div>
-            <h3 className="font-semibold text-lg mb-1.5">{feature.title}</h3> {/* Adjusted font size, mb */}
+            <h3 className={`font-semibold ${inter.className} text-lg mb-1.5`}>{feature.title}</h3> {/* Adjusted font size, mb */}
             <p className="text-sm">{feature.description}</p> {/* Adjusted text size */}
           </div>
         ))}

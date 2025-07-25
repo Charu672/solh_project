@@ -1,6 +1,11 @@
 import { FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa"; 
 import Image from "next/image"; 
-
+import { Inter } from "next/font/google";
+const inter = Inter({
+  subsets: ['latin'], // This is standard for most Latin-based content
+  weight: ['400', '500', '600', '700'], // Common weights for Inter (Regular, Medium, SemiBold, Bold)
+  // No 'variable' needed if you're not extending tailwind.config.js
+});
 export default function Footer() {
   return (
     <footer className="bg-[#0C1220] text-white py-10 px-6 sm:px-10 lg:px-20">
@@ -13,7 +18,7 @@ export default function Footer() {
             height={30}
             className="mb-4"
           />
-          <p className="text-gray-400 text-sm mb-6 leading-relaxed max-w-xl">
+          <p className={`text-gray-400 text-sm mb-6 ${inter.className} leading-relaxed max-w-xl`}>
             We are mental health experienced therapists that are passionate
             about our goal on empowering you mentally with our wellness journey.
           </p>
@@ -21,7 +26,7 @@ export default function Footer() {
             <input
               type="email"
               placeholder="Enter email address for newsletter …"
-              className="w-full pl-4 pr-12 py-2 rounded-3xl bg-[#0C1220] text-sm text-gray-200 border border-gray-700 placeholder-gray-400 focus:outline-none focus:border-white"
+              className={`w-full pl-4 pr-12 py-2 rounded-3xl bg-[#0C1220] ${inter.className} text-sm text-gray-200 border border-gray-700 placeholder-gray-400 focus:outline-none focus:border-white`}
             />
             <button
               type="submit"
@@ -34,7 +39,7 @@ export default function Footer() {
 
         <div className="flex flex-col">
           <div className="flex flex-col flex-wrap justify-between gap-8 text-sm">
-            <div className="flex flex-col gap-2">
+            <div className={`flex flex-col gap-2 ${inter.className}`}>
               <a href="#" className="text-gray-400 hover:text-white">
                 Platform
               </a>

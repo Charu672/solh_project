@@ -1,12 +1,17 @@
 import Image from "next/image";
-
+import {Inter } from "next/font/google";
+const inter = Inter({
+  subsets: ['latin'], // This is standard for most Latin-based content
+  weight: ['400', '500', '600', '700'], // Common weights for Inter (Regular, Medium, SemiBold, Bold)
+  // No 'variable' needed if you're not extending tailwind.config.js
+});
 export default function VideoSection() {
   return (
     <section className="px-6 md:px-12 py-10 text-center bg-white">
       <h2 className="text-3xl font-medium text-black mb-2">
         One Platform. Every Wellness Need Covered.
       </h2>
-      <p className="text-sm text-gray-600 mb-8 max-w-xl mx-auto">
+      <p className={`text-sm text-gray-600 ${inter.className} mb-8 max-w-lg mx-auto`}>
         Lorem Ipsum is simply dummy text of the printing compassionate community dolor lorem Ipsum is simply dummy.
       </p>
       <div className="relative w-full">

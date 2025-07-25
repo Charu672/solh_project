@@ -1,15 +1,20 @@
 "use client";
 
 import Image from "next/image";
-
+import {Inter } from "next/font/google";
+const inter = Inter({
+  subsets: ['latin'], // This is standard for most Latin-based content
+  weight: ['400', '500', '600', '700'], // Common weights for Inter (Regular, Medium, SemiBold, Bold)
+  // No 'variable' needed if you're not extending tailwind.config.js
+});
 export default function AboutSolhApp() {
   return (
     <section className="bg-white">
       <div className="text-center mb-4">
-        <h2 className="text-2xl md:text-3xl font-semibold text-black mb-4">
+        <h2 className="text-2xl md:text-3xl font-medium text-black mb-4">
           About Solh Wellness App
         </h2>
-        <p className="text-gray-600 text-base max-w-3xl mx-auto">
+        <p className={`text-gray-600 text-base ${inter.className} max-w-3xl mx-auto`}>
           Solh Wellness is a mental health app that offers 360° support for
           emotional well-being. It helps users manage stress, track mental
           health, and access expert support.

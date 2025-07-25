@@ -1,5 +1,6 @@
-@tailwind base;
-@tailwind components;
+/* @import "tailwindcss/preflight" */
+/* @tailwind base; */
+/* @tailwind components; */
 @tailwind utilities;
 
 @import "tailwindcss";
@@ -27,3 +28,21 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Or define a direct utility class */
+.font-urbanist {
+  font-family: 'Urbanist', sans-serif;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.test-gradient {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa, #93c5fd);
+  background-size: 200% 200%;
+  animation: gradientFlow 6s ease infinite;
+}
+
+

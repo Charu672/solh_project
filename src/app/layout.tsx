@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Urbanist, Inter } from "next/font/google";
 import "./globals.css";
-
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -11,6 +12,19 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const inter = Inter({
+  subsets: ['latin'], // This is standard for most Latin-based content
+  weight: ['400', '500', '600', '700'], // Common weights for Inter (Regular, Medium, SemiBold, Bold)
+  // No 'variable' needed if you're not extending tailwind.config.js
+});
+const urbanist = Urbanist({
+  subsets: ['latin'], // Or other subsets you need
+  weight: ['400', '600', '800'], // Specify the weights you'll use
+  // variable: '--font-urbanist', // Optional: Use a CSS variable for easier Tailwind integration
+});
+
+gsap.registerPlugin(ScrollTrigger); // Register the plugin once
 
 export const metadata: Metadata = {
   title: "SolhWellness",
@@ -25,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${urbanist.className} antialiased`}
       >
         {children}
       </body>

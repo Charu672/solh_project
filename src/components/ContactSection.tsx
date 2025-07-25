@@ -2,11 +2,21 @@
 
 import Image from "next/image";
 import { MdOutlineMailOutline } from "react-icons/md"; 
-
+import {DM_Sans, Inter } from "next/font/google";
+const dmsans = DM_Sans({
+  subsets: ['latin'], // This is standard for most Latin-based content
+  weight: ['400', '500', '600', '700'], // Common weights for Inter (Regular, Medium, SemiBold, Bold)
+  // No 'variable' needed if you're not extending tailwind.config.js
+});
+const inter = Inter({
+  subsets: ['latin'], // This is standard for most Latin-based content
+  weight: ['400', '500', '600', '700'], // Common weights for Inter (Regular, Medium, SemiBold, Bold)
+  // No 'variable' needed if you're not extending tailwind.config.js
+});
 export default function ContactSection() {
   return (
     <section className="bg-white py-8 px-4 sm:px-6 lg:px-8"> 
-      <h2 className="text-xl md:text-3xl text-center font-semibold text-black mb-6"> 
+      <h2 className={`text-xl md:text-3xl text-center font-medium ${dmsans.className} text-black mb-6`}> 
             Let’s Build a Healthier, Happier Workplace
           </h2>
       <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-8"> 
@@ -18,7 +28,7 @@ export default function ContactSection() {
               alt="Workplace Illustration"
               width={300} 
               height={180} 
-              className="object-contain p-2" 
+              className="object-contain p-2 animate-pulse" 
             />
           </div>
         </div>
@@ -81,7 +91,7 @@ export default function ContactSection() {
             />
             <button
               type="submit"
-              className="bg-[#406AFF] hover:bg-[#2f4ed6] text-white font-semibold py-2.5 rounded-md  transition-colors duration-200 text-sm" // Reduced padding, set text-sm
+              className={`bg-[#3973E1] hover:bg-[#2f4ed6] ${inter.className} text-white font-bold py-2.5 rounded-md  transition-colors duration-200 text-sm`} 
             >
               Schedule My Demo
             </button>

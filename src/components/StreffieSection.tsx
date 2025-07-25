@@ -29,7 +29,7 @@ export default function StreffieSection() {
 
   return (
     <section className="bg-white pt-10 px-4 sm:px-6 lg:px-12 text-center">
-      <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
+      <h2 className="text-2xl md:text-3xl font-medium text-black mb-4">
         What is Streffie
       </h2>
       <p className="text-gray-600 text-base max-w-5xl mx-auto mb-4">

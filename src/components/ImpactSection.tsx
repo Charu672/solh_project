@@ -2,16 +2,22 @@
 
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
+import {DM_Sans } from "next/font/google";
+const dmsans = DM_Sans({
+  subsets: ['latin'], // This is standard for most Latin-based content
+  weight: ['400', '500', '600', '700'], // Common weights for Inter (Regular, Medium, SemiBold, Bold)
+  // No 'variable' needed if you're not extending tailwind.config.js
+});
 export default function ImpactSection() {
   return (
     <section className="bg-[#F5F8FF] py-10 px-4">
       <div className="text-center">
-        <h2 className="text-2xl md:text-3xl font-semibold text-black mb-10">
+        <h2 className="text-2xl md:text-3xl font-medium text-black mb-10">
           Proven Impact Across Industries
         </h2>
 
         {/* Stats */}
-        <div className="flex flex-row flex-wrap justify-center items-center gap-10 mb-12">
+        <div className={`flex flex-row flex-wrap justify-center items-center gap-10 mb-12 ${dmsans.className}`}>
           <StatBox value="10,000" label="Personalized support plans" />
           <StatBox value="32%" label="Context aware recommendations" />
           <StatBox value="6x" label="Integrated ecosystem" />
