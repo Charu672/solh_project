@@ -51,7 +51,7 @@ export default function Stats() {
           ref={card1Ref} // Attach ref
           className="px-6 py-8 rounded-lg shadow w-80 overflow-hidden" // Added overflow-hidden
           style={{
-            backgroundImage: "linear-gradient(to right, #E2EAFE 0%, #BFD7F2 50%, #E2EAFE 100%)", // Custom wider gradient
+            backgroundImage: "linear-gradient(to right, 	#ceeffe 0%, 		#4d8cc5 50%, #ceeffe 100%)", // Custom wider gradient
             backgroundSize: "300% 100%", // Increased background size for a more visible run
             backgroundPosition: "0% 0%", // Initial position
           }}
@@ -66,7 +66,7 @@ export default function Stats() {
           ref={card2Ref} // Attach ref
           className="px-6 py-8 rounded-lg shadow w-80 overflow-hidden" // Added overflow-hidden
           style={{
-            backgroundImage: "linear-gradient(to right, #F0EAFE 0%, #D8C2F2 50%, #F0EAFE 100%)", // Custom wider gradient
+            backgroundImage: "linear-gradient(to right, #F0EAFE 0%, 			#a582b3 50%, #F0EAFE 100%)", // Custom wider gradient
             backgroundSize: "300% 100%", // Increased background size
             backgroundPosition: "0% 0%",
           }}
@@ -79,7 +79,7 @@ export default function Stats() {
           ref={card3Ref} // Attach ref
           className="px-6 py-8 rounded-lg shadow w-80 overflow-hidden" // Added overflow-hidden
           style={{
-            backgroundImage: "linear-gradient(to right, #FFF0E2 0%, #FFD7B3 50%, #FFF0E2 100%)", // Custom wider gradient
+            backgroundImage: "linear-gradient(to right, #FFF0E2 0%,#ff9248 50%, #FFF0E2 100%)", // Custom wider gradient
             backgroundSize: "300% 100%", // Increased background size
             backgroundPosition: "0% 0%",
           }}

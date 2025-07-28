@@ -1,6 +1,7 @@
 /* @import "tailwindcss/preflight" */
 /* @tailwind base; */
 /* @tailwind components; */
+
 @tailwind utilities;
 
 @import "tailwindcss";
@@ -43,6 +44,45 @@ body {
   background: linear-gradient(90deg, #3b82f6, #60a5fa, #93c5fd);
   background-size: 200% 200%;
   animation: gradientFlow 6s ease infinite;
+}
+
+.testimonial-swiper .swiper-button-prev::after,
+.testimonial-swiper .swiper-button-next::after {
+  font-size: 16px !important; /* or 12px, adjust to your need */
+  /* padding: 30px !important; */
+  /* margin: 24px !important */
+  /* left: -10px !important;  */
+}
+
+.testimonial-swiper .swiper-button-prev {
+  left: -10px !important;         /* Push left arrow slightly outside */
+}
+
+.testimonial-swiper .swiper-button-next {
+  right: -10px !important;        /* Push right arrow slightly outside */
+}
+
+/* Fill-from-bottom hover animation */
+.fill-hover-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fill-hover-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(to top, #406AFF, #4E76F0);
+  z-index: 0;
+  transition: height 0.5s ease;
+}
+
+.fill-hover-card:hover::before {
+  height: 100%;
 }
 
 

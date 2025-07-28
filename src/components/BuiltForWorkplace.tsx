@@ -30,7 +30,7 @@ export default function BuiltForWorkplace() {
       const cards = gsap.utils.toArray(cardsContainerRef.current.children);
 
       // Set initial state for all cards (hidden and slightly below their final position)
-      gsap.set(cards, { opacity: 0, y: 50 });
+      gsap.set(cards, { opacity: 0, y: -50 });
 
       // Create a ScrollTrigger animation for the cards
       ScrollTrigger.create({
@@ -88,8 +88,8 @@ export default function BuiltForWorkplace() {
             // Add 'group' class to make this div a reference for group-hover
             // Apply default white background and dark text
             // Apply hover states for background, text, and border colors
-            className="group border border-blue-100 rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer
-                       hover:bg-blue-600 hover:border-blue-600" // Added hover background and border
+            className="group border border-blue-100 rounded-xl p-6 bg-blue-50 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer
+                       hover:bg-gradient-to-t from-blue-300 to-blue-700 hover:border-blue-600" // Added hover background and border
           >
             {/* Icon */}
             <div

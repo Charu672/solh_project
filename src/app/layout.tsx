@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Urbanist, Inter } from "next/font/google";
 import "./globals.css";
 import { gsap } from 'gsap';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const geistSans = Geist({
   variable: "--font-geist-sans",

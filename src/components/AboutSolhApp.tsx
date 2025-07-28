@@ -48,7 +48,7 @@ export default function AboutSolhApp() {
             alt="Solh App Main Screen"
             width={220}
             height={400} // (approx 1:2 aspect ratio)
-            className="relative z-20 object-contain shadow-xl rounded-3xl"
+            className="relative z-20 object-contain rounded-3xl"
           />
 
           {/* Top-Left Card */}

@@ -6,16 +6,16 @@ import { gsap } from "gsap";
 
 export default function TrustedBy() {
   const logos = [
-    "microsoft.png",
-    "gspann.png",
-    "realme.png",
-    "welspun.png",
-    "enablex.png",
+    "microsoft1.png",
+    "gspann2.png",
+    "realme1.png",
+    "welspun1.png",
+    "enablex1.png",
     "indigo.png",
-    "coding-ninjas.png",
+    "codingninja2.png",
   ];
 
-  const duplicatedLogos = [...logos, ...logos, ...logos];
+  const duplicatedLogos = [...logos, ...logos, ...logos, ...logos, ...logos, ...logos];
 
   // Corrected type for marqueeRef and marqueeContentRef
   const marqueeRef = useRef<HTMLDivElement>(null);
@@ -58,9 +58,9 @@ export default function TrustedBy() {
               key={idx}
               src={`/logos/${logo}`}
               alt={logo.replace(".png", "")}
-              width={90}
+              width={100}
               height={40}
-              className="flex-shrink-0 mx-4"
+              className="flex-shrink-0 mx-5"
             />
           ))}
         </div>
