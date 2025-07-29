@@ -61,7 +61,7 @@ export default function ImpactSection() {
           slidesPerView={1}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           loop={true}
-          navigation
+          navigation={false}
           pagination={{ clickable: true }}
           className="testimonial-swiper"
         >
@@ -74,7 +74,7 @@ export default function ImpactSection() {
                   ))}
                 </div>
                 <p className="text-gray-700 text-sm mb-4">{t.text}</p>
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-4 mb-8">
                   <Image
                     src={t.image}
                     alt={t.name}
