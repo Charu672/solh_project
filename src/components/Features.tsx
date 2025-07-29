@@ -35,7 +35,7 @@ export default function Features() {
   return (
     <section className="px-4 md:px-8 bg-white text-center py-12">
       {/* Container for the three feature cards */}
-      <div className="flex flex-col md:flex-row gap-4 justify-center max-w-5xl mx-auto">
+      <div className="flex flex-col md:flex-row gap-4 justify-center items-center max-w-5xl mx-auto">
         {features.map((feature, index) => (
           <div
             key={index}
