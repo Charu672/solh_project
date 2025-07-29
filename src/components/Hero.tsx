@@ -151,13 +151,13 @@ if (userImagesRef.current) {
         </div>
         <div
           ref={buttonsRef} // Attach ref
-          className="flex gap-4 flex-row flex-wrap justify-center z-20 opacity-0" // Start opacity-0
+          className="flex gap-4 flex-row flex-wrap justify-center items-center z-20 opacity-0" // Start opacity-0
         >
-          <button className="bg-[#4E76F0] hover:bg-blue-600 hover:text-white text-white border border-gray-50 shadow font-semibold px-6 rounded-lg flex items-center justify-center gap-2">
+          <button className="bg-[#4E76F0] hover:bg-blue-600 hover:text-white text-white border border-gray-50 shadow font-semibold px-6 py-3 rounded-lg flex items-center justify-center gap-2 sm:w-auto">
             Request a Demo
             <MdArrowOutward className="" />
           </button>
-          <button className=" border border-gray-50 shadow bg-[#4E76F0] hover:bg-blue-600 hover:text-white text-white font-semibold px-6 py-3 rounded-lg w-full sm:w-auto">
+          <button className=" border border-gray-50 shadow bg-[#4E76F0] hover:bg-blue-600 hover:text-white text-white font-semibold px-6 py-3 flex items-center justify-center gap-2 rounded-lg sm:w-auto">
             Product Overview
           </button>
         </div>
