@@ -167,7 +167,7 @@ if (userImagesRef.current) {
         {/* Left Circular Image Group */}
         <div
           ref={leftImageGroupRef} // Attach ref
-          className="relative w-[250px] h-[250px] md:w-[500px] md:h-[300px] flex justify-center items-center flex-shrink-0 opacity-0" // Start opacity-0
+          className="relative w-[250px] h-[250px] md:w-[500px] md:h-[300px] flex justify-center items-center mt-13 md:mt-0 flex-shrink-0 opacity-0" // Start opacity-0
         >
           <img
             src="/outercircle.png"
