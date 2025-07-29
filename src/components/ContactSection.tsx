@@ -25,12 +25,12 @@ export default function ContactSection() {
         {/* Left Image and its Background */}
         <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left relative lg:pr-6">
           <div className="relative w-[280px] h-[180px] md:w-[400px] md:h-[250px] lg:w-[450px] lg:h-[300px] bg-gradient-to-b from-purple-200 to-orange-200  rounded-lg shadow-md flex items-center justify-center">
-            <Image
+            <img
               src="/contact.png"
               alt="Workplace Illustration"
-              width={300}
-              height={180}
-              className="object-contain p-2 animate-pulse"
+              // width={300}
+              // height={180}
+              className="object-contain p-2 animate-pulse md:h-78 md:w-80 h-48 w-48"
             />
           </div>
         </div>
