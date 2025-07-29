@@ -36,7 +36,7 @@ export default function ContactSection() {
         </div>
 
         <div className="flex-1 w-full mt-8 lg:mt-0">
-          <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <form className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-8 md:mx-0">
             <div className="relative w-full">
               <label
                 htmlFor="firstName"
